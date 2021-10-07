@@ -22,7 +22,6 @@ body {
 }
 
 .contain {
-    position: relative;
     display: flex;
     width: 80%;
     height: 600px;
@@ -32,7 +31,13 @@ body {
 .imagePrincipale {
     overflow: hidden;
     width: 450px;
-    height: 100%;
+    height: 450px;
+    object-fit: contain;
+}
+
+.imagePrincipale img {
+    width: 450px;
+    height: 450px;
     object-fit: cover;
 }
 
@@ -53,4 +58,8 @@ body {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+}
+
+.fas {
+    font-size: 40px;
 }
